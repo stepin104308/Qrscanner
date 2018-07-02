@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/zxing_possible_result_points"
+
+        tools:context="com.example.mymac.qrscanner2.GeneratorActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/gen_btn"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/gen_btn"
+            android:text="QR Code Generator" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:hint="Enter Text to generate"
+            android:id="@+id/text"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:hint="Enter number"
+        android:id="@+id/text1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_centerHorizontal="true"
+            android:text="GENERATE"
+            android:id="@+id/gen_btn"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="155dp"
+
+            android:id="@+id/view" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@+id/view">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image"/>
+        </LinearLayout>
+    </RelativeLayout>
